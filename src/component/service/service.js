@@ -1,7 +1,12 @@
 import React from 'react';
+import Clauser from '../clauser/clauser'
+import Navbar from '../navbar/nav'
 
 const Service =()=> {
         return(
+            <>
+            <Navbar/>
+            <Clauser/>
             <div className="main_heading my-5 bg-light pt-5">
                 <div className="text-center">
                     <h1 className="display-4" id="hstyle"> Our Services </h1>
@@ -78,7 +83,7 @@ const Service =()=> {
 
             </div>
         </div>
-    
+    </>
         )
 }
 

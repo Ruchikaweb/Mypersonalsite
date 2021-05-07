@@ -1,7 +1,12 @@
 import React from 'react';
 import '../contact/contact.css'
+import Clauser from '../clauser/clauser'
+import Navbar from '../navbar/nav'
 const Contact =()=>{
     return(
+        <>
+        <Navbar/>
+        <Clauser/>
         <div className="main_heading my-5">
         <div className="text-center">
             <h1 className="display-4" id="hstyle"> Contact Us </h1>
@@ -63,14 +68,13 @@ const Contact =()=>{
                 <div className=" col-xxl-12 col-12 col-md-12">
                     <footer className="text-center py-5" id="contactstyle" style={{fontSize:'20px'}}>
                         <p> E-mail : ruchikanikita94135@gmail.com </p>
-                        <p> Mobile : +91 820 911 1389 </p>
                         <a href="https://www.linkedin.com/in/ruchika-agarwal-51a2841bb/" target="_blank"> <img src="./images/in logo.png" id="istyel" alt="inlogo"/> </a>
                         <a href="https://github.com/Ruchikaweb" target="_blank"> <img src="./images/git logo.png" id="istyel" alt="gitlog"/> </a> 
                     </footer>
                 </div>
             </div>
     </div>
-
+</>
     )
 }
 

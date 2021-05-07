@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from '../navbar/nav'
+import Clauser from '../clauser/clauser'
 import '../about/about.css'
 const About =()=> {
         return(
             <div>
+                <Navbar/>
+                <Clauser/>
                 <div className="main_heading my-5">
                     <div className="text-center">
                         <h1 className="display-4" id="hstyle"> About Me </h1>
@@ -24,7 +28,7 @@ const About =()=> {
                                 </span>
                             </div>
                         </div>
-                    
+        
                 </div>
                 <div className="bg-dark pb-4 mt-4">
                     <div className="main_heading my-5  pt-5 ">

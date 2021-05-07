@@ -1,9 +1,13 @@
 import React from 'react';
+import Clauser from '../clauser/clauser'
+import Navbar from '../navbar/nav'
 import {Link} from 'react-router-dom';
 import '../home/home.css'
 const Home =()=>{
     return(
        <> 
+       <Navbar/>
+        <Clauser/>
        {/* //about page// */}
         <div className="main_heading my-5">
             <div className="text-center">
@@ -17,7 +21,7 @@ const Home =()=>{
                             <img src="./images/my pic.jpg" id="myimg" alt="about image" className=".img-fluid about_img"/>
                         </figure>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-12 col-xxl-6">
+                    <div className="col-lg-6 col-md-6 col-12 col-xxl-6" id="mydetails">
                         <h1> Hello! I'm Ruchika </h1>
                         <span> 
                             I'm a full stack web developer , live in churu (Raj). I can make all types of websites like e-commerce website , your personal website, school management website etc.
@@ -86,8 +90,21 @@ const Home =()=>{
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-12 text-center my-5">
-                        <Link to="/Service"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="Who Am I">Check More</button></Link>
+                    <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                        <div class="card mb-3" style={{maxWidth:'540px'}}>
+                            <div class="row">
+                                <div class="col-md-4" >
+                                    <img id ="servicecardimage" src="./images/fifth.jpg" alt="service page"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Forntend Developer </h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
@@ -102,36 +119,37 @@ const Home =()=>{
                     </div>   
                     <div className="container">
                         <div className="row gx-0 my-5">
-                            <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                        <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                    <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/>
+                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                    <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/>
+                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                    <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/>
+                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                    <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/>
+                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                    <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/>
+                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
+                            
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                    <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/>
+                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
-                            </div>
+                            </div> 
                             <div className="col-xxl-12 text-center my-5"> 
                                 <Link to="/Gallary">   <button type="button" class="btn btn-outline-info " data-toggle="tooltip" data-placement="right" title="See more projects">Check More</button> </Link>
                             </div>
@@ -220,7 +238,7 @@ const Home =()=>{
                 <div className=" col-xxl-12 col-12 col-md-12">
                     <footer className="text-center py-5" id="contactstyle" style={{fontSize:'20px'}}>
                         <p> E-mail : ruchikanikita94135@gmail.com </p>
-                        <p> Mobile : +91 820 911 1389 </p>
+                        {/* <p> Mobile : +91 820 911 1389 </p> */}
                         <a href="https://www.linkedin.com/in/ruchika-agarwal-51a2841bb/" target="_blank"> <img src="./images/in logo.png" id="istyel" alt="inlogo"/> </a>
                         <a href="https://github.com/Ruchikaweb" target="_blank"> <img src="./images/git logo.png" id="istyel" alt="gitlog"/> </a> 
                     </footer>
