@@ -1,0 +1,21 @@
+#adminimg{
+
+}
+
+#hrstyle{
+    margin-top: -7%;
+}
+
+
+@media screen and (max-width:1130px){
+    #adminimg{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #adminimg{
+        margin-top: 14%;
+    }
+}

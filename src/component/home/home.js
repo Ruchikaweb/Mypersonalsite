@@ -121,33 +121,33 @@ const Home =()=>{
                         <div className="row gx-0 my-5">
                         <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
+                                <Link to="/Gallary/id">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
+                                <Link to="/Gallary/id">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
+                                <Link to="/Gallary/id">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
+                                <Link to="/Gallary/id">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
+                                <Link to="/Gallary/id">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div>
                             
                             <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                                 <figure>
-                                <Link to="/Gallary/:project">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
+                                <Link to="/Gallary/id">   <img src="./images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                                 </figure>
                             </div> 
                             <div className="col-xxl-12 text-center my-5"> 
