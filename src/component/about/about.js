@@ -42,16 +42,16 @@ const About =()=> {
                             <p id="logotitle"> I'm a life long learner and enjoy learning new stuff! Below are some 
                                 programming language tookits, framworks and libraries that i worked with and like. Some of them I control better than the other.
                             </p>
-                            <img id="logoimgstyle" src="./images/html logo.png"/>
-                            <img id="logoimgstyle" src="./images/css logo.png"/>
-                            <img id="logoimgstyle" src="./images/bootstrap logo.png"/>
-                            <img id="logoimgstyle" src="./images/react logo.png"/>
-                            <img id="logoimgstyle" src="./images/js logo.png"/>
-                            <img id="logoimgstyle" src="./images/c logo.png"/>
-                            <img id="logoimgstyle" src="./images/c++ logo.png"/>
-                            <img id="logoimgstyle" src="./images/mongodb logo.png"/>
-                            <img id="logoimgstyle" src="./images/mysql logo.png"/>
-                            <img id="logoimgstyle" src="./images/nodejs logo.png"/>
+                            <img id="logoimgstyle" src="./images/html_logo.png"/>
+                            <img id="logoimgstyle" src="./images/css_logo.png"/>
+                            <img id="logoimgstyle" src="./images/bootstrap_logo.png"/>
+                            <img id="logoimgstyle" src="./images/react_logo.png"/>
+                            <img id="logoimgstyle" src="./images/js_logo.png"/>
+                            <img id="logoimgstyle" src="./images/c_logo.png"/>
+                            <img id="logoimgstyle" src="./images/c++_logo.png"/>
+                            <img id="logoimgstyle" src="./images/mongodb_logo.png"/>
+                            <img id="logoimgstyle" src="./images/mysql_logo.png"/>
+                            <img id="logoimgstyle" src="./images/nodejs_logo.png"/>
                             
                         </div>
                     </div>

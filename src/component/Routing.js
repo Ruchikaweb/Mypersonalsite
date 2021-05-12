@@ -9,8 +9,11 @@ import Gallary from '../component/gallary/gallary';
 import Panel from '../component/addminstrator/panel';
 import Pdetails from '../component/Projectdetail/pdetail';
 import Adminabout from '../component/addminstrator/adminabout';
+import Editabout from '../component/addminstrator/editabout';
 import Adminproject from '../component/addminstrator/adminproject';
+import Editproject from '../component/addminstrator/editproject';
 import Adminservice from '../component/addminstrator/adminservice';
+import Editservice from '../component/addminstrator/editservice';
 import Sub from '../component/addminstrator/subscriber';
 const Routing = () =>{
     return(
@@ -25,7 +28,10 @@ const Routing = () =>{
          <Route path="/adminr/Adminabout"  component={Adminabout}/> 
          <Route path="/adminr/Adminproject"  component={Adminproject}/> 
          <Route path="/adminr/Adminservice" component={Adminservice}/>
-         <Route path="/adminr/sub" component={Sub}/>
+         <Route path="/adminr/sub" component={Sub}/> 
+         <Route path="/Editabout" component={Editabout}/>
+         <Route path="/Editproject" component={Editproject}/>
+         <Route path="/Editservice" component={Editservice}/>
          <Footer/>
         </BrowserRouter>
     )

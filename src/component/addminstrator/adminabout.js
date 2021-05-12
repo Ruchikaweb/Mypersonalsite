@@ -1,8 +1,9 @@
 import React from 'react';
-import './subscriber.css'
+import './subscriber.css';
+import {Link} from 'react-router-dom';
 import '../about/about.css';
 const Adminabout =()=> {
-        return(
+        return( 
             <div>
                 <div id="headstyle">
                     <div className="row">
@@ -41,6 +42,9 @@ const Adminabout =()=> {
                                 In my website frontend and backend both are included and it is fully responsive website for all screen. 
                                 </span>
                             </div>
+                            <div className="col-lg-4 col-md-4 col-4 col-xxl-4">
+                             <Link to="/Editabout"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="insert "> Edit </button> </Link>   
+                            </div>
                         </div>
         
                 </div>
@@ -56,16 +60,16 @@ const Adminabout =()=> {
                             <p id="logotitle"> I'm a life long learner and enjoy learning new stuff! Below are some 
                                 programming language tookits, framworks and libraries that i worked with and like. Some of them I control better than the other.
                             </p>
-                            <img id="logoimgstyle" src="/images/html logo.png"/>
-                            <img id="logoimgstyle" src="/images/css logo.png"/>
-                            <img id="logoimgstyle" src="/images/bootstrap logo.png"/>
-                            <img id="logoimgstyle" src="/images/react logo.png"/>
-                            <img id="logoimgstyle" src="/images/js logo.png"/>
-                            <img id="logoimgstyle" src="/images/c logo.png"/>
-                            <img id="logoimgstyle" src="/images/c++ logo.png"/>
-                            <img id="logoimgstyle" src="/images/mongodb logo.png"/>
-                            <img id="logoimgstyle" src="/images/mysql logo.png"/>
-                            <img id="logoimgstyle" src="/images/nodejs logo.png"/>
+                            <img id="logoimgstyle" src="/images/html_logo.png"/>
+                            <img id="logoimgstyle" src="/images/css_logo.png"/>
+                            <img id="logoimgstyle" src="/images/bootstrap_logo.png"/>
+                            <img id="logoimgstyle" src="/images/react_logo.png"/>
+                            <img id="logoimgstyle" src="/images/js_logo.png"/>
+                            <img id="logoimgstyle" src="/images/c_logo.png"/>
+                            <img id="logoimgstyle" src="/images/c++_logo.png"/>
+                            <img id="logoimgstyle" src="/images/mongodb_logo.png"/>
+                            <img id="logoimgstyle" src="/images/mysql_logo.png"/>
+                            <img id="logoimgstyle" src="/images/nodejs_logo.png"/>
                             
                         </div>
                     </div>

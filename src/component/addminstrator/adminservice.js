@@ -1,5 +1,6 @@
 import React from 'react';
-import '../addminstrator/subscriber.css'
+import '../addminstrator/subscriber.css';
+import {Link} from 'react-router-dom';
 
 const Adminservice =()=> {
         return(
@@ -33,20 +34,60 @@ const Adminservice =()=> {
                         <div class="card mb-3" style={{maxWidth:'540px'}}>
                             <div class="row">
                                 <div class="col-md-4" >
-                                    <img id ="servicecardimage" src="/images/fifth.jpg" alt="service page"/>
+                                    <img id ="servicecardimage" style={{height:'100%' , width:'100%'}} src="/images/fifth.jpg" alt="service page"/>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title"> Forntend Developer </h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <Link to="/Editservice"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="Update"> Update </button> </Link>
+                                        <button type="button" class="btn btn-outline-info"> In Service </button> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
+                    <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                        <div class="card mb-3" style={{maxWidth:'540px'}}>
+                            <div class="row">
+                                <div class="col-md-4" >
+                                    <img id ="servicecardimage" style={{height:'100%' , width:'100%'}} src="/images/fifth.jpg" alt="service page"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Forntend Developer </h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <Link to="/Editservice"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="Update"> Update </button> </Link>
+                                        <button type="button" class="btn btn-outline-info"> In Service </button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                        <div class="card mb-3" style={{maxWidth:'540px'}}>
+                            <div class="row">
+                                <div class="col-md-4" >
+                                    <img id ="servicecardimage" style={{height:'100%' , width:'100%'}} src="/images/fifth.jpg" alt="service page"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Forntend Developer </h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <Link to="/Editservice"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="Update"> Update </button> </Link>
+                                        <button type="button" class="btn btn-outline-info"> In Service </button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+       
                 </div>
+                <center>  <Link to="/Editservice"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="insert" style={{padding:'1%',fontSize:'20px', marginBottom:'2%',marginTop:'1%'}}> Edit </button> </Link>  </center>
+                
 
             </div>
         </div>

@@ -43,8 +43,8 @@ const Adminproject =() =>{
                     <Link to="/Gallary/:project">   <img src="/images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
                     </figure>
                 </div>
-               
-               
+
+                <Link to="/Editproject"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="insert "> Edit </button> </Link>  
                 </div>
             </div>      
         </div>
