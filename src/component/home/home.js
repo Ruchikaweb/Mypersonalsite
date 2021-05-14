@@ -48,73 +48,38 @@ class Home extends React.Component {
                      </div> 
      
                      <div className="container">
-                         <div className="row">
-                         <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                             <div class="card mb-3" style={{maxWidth:'540px'}}>
-                                 <div class="row">
-                                     <div class="col-md-4" >
-                                         <img id ="servicecardimage" src="./images/fifth.jpg" alt="service page"/>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <div class="card-body">
-                                             <h5 class="card-title">Card title</h5>
-                                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                             <div class="card mb-3" style={{maxWidth:'540px'}}>
-                                 <div class="row">
-                                     <div class="col-md-4" >
-                                         <img id ="servicecardimage" src="./images/fifth.jpg" alt="service page"/>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <div class="card-body">
-                                             <h5 class="card-title">Card title</h5>
-                                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                             <div class="card mb-3" style={{maxWidth:'540px'}}>
-                                 <div class="row">
-                                     <div class="col-md-4" >
-                                         <img id ="servicecardimage" src="./images/fifth.jpg" alt="service page"/>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <div class="card-body">
-                                             <h5 class="card-title">Card title</h5>
-                                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                             <div class="card mb-3" style={{maxWidth:'540px'}}>
-                                 <div class="row">
-                                     <div class="col-md-4" >
-                                         <img id ="servicecardimage" src="./images/fifth.jpg" alt="service page"/>
-                                     </div>
-                                     <div class="col-md-8">
-                                         <div class="card-body">
-                                             <h5 class="card-title"> Forntend Developer </h5>
-                                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         
-                     </div>
+                        <div className="row"> 
+                            <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                                <div class="card" style={{width:'18rem'}}>
+                                    <img src="./images/fifth.jpg" class="card-img-top" alt="..."/>
+                                    <div class="card-body">
+                                    <h5 class="card-title">card.title</h5>
+                                    <p class="card-text"> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
+                                    {/* <Link to={`/Servicedetails/${item._id}`} class="btn btn-primary">View More Details</Link> */}
+                                    </div>
+                                </div>
+                            </div> 
+                            <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                                <div class="card" style={{width:'18rem'}}>
+                                    <img src="./images/fifth.jpg" class="card-img-top" alt="..."/>
+                                    <div class="card-body">
+                                    <h5 class="card-title">card.title</h5>
+                                    <p class="card-text"> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
+                                    {/* <Link to={`/Servicedetails/${item._id}`} class="btn btn-primary">View More Details</Link> */}
+                                    </div>
+                                </div>
+                            </div> 
+                            <div className="col-md-4 col-10 col-xxl-4 mx-auto">
+                                <div class="card" style={{width:'18rem'}}>
+                                    <img src="./images/fifth.jpg" class="card-img-top" alt="..."/>
+                                    <div class="card-body">
+                                    <h5 class="card-title">card.title</h5>
+                                    <p class="card-text"> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
+                                    {/* <Link to={`/Servicedetails/${item._id}`} class="btn btn-primary">View More Details</Link> */}
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
                      </div>
                  </div>
              </div>

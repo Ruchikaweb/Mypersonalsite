@@ -26,11 +26,11 @@ const Panel =()=>{
                         <Link class="nav-link" to="/adminr/Adminservice">Service</Link>
                         </li>
                         <li class="nav-item">
-                        <Link class="nav-link" to="/adminr/sub"> Subscriber</Link>
+                        <Link class="nav-link" to="/adminr/Subscriber"> Subscriber</Link>
                         </li>
                     </ul>
                     </div>
-                </div>
+                </div>  
             </nav>
             <div id="headstyle">
                 <div className="row">

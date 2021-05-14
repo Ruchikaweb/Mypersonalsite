@@ -1,6 +1,28 @@
 import React from 'react';
 import '../addminstrator/subscriber.css'
-const Sub=() =>{
+const Sub= (props) =>{
+        const List = ({Listing}) => {
+            if(Listing){
+                return Listing.map((item) => {
+                    return(
+                        <tr>
+                            <td>{item.name}</td>
+                            <td> {item.email}</td>
+                            <td> {item.gender} </td>
+                            <td> {item.city}</td>
+                            <td>{ item.message} </td>
+                        </tr>
+                    )
+                })
+            } 
+            else{
+                return(
+                    <div>
+                        <img src="/images/loader.gif"/>
+                    </div>
+                )
+            }
+        } 
         return(
             <div>
                 <div id="headstyle">
@@ -24,7 +46,6 @@ const Sub=() =>{
                     <table className="table table-responsive">
                         <thead>
                             <tr>
-                            {/* <th> OrderId </th> */}
                             <th> Name </th>
                             <th> E-mail </th>
                             <th> Gender </th>
@@ -33,21 +54,7 @@ const Sub=() =>{
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td> Ruchika </td>
-                                <td>ruchi@gmail.com </td>
-                                <td>Female </td>
-                                <td> churu </td>
-                                <td> hello </td>
-                            </tr>
-                            <tr>
-                                <td> Ruchika </td>
-                                <td>ruchi@gmail.com </td>
-                                <td>Female </td>
-                                <td> churu </td>
-                                <td> hello </td>
-                            </tr>
-                            
+                            {List(props)}
                         </tbody>
                     </table>
                 </div>
@@ -58,3 +65,4 @@ const Sub=() =>{
 }
 
 export default Sub ;
+
