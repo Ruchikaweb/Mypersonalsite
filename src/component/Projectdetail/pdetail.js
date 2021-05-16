@@ -13,7 +13,7 @@ const Pdetails =(props)=>{
                         <div className="col-md-6 col-6 col-xxl-6 mx-auto" id="pedit" >
                                 <h3> <center> {item.projectname} </center>  </h3>
                                 <hr className="w-25 mx-auto"/>
-                                <div>
+                                <div> 
                                     <span> <b> Details- </b> </span>
                                     <span> {item.details} </span>
                                 </div><br/>
@@ -24,7 +24,7 @@ const Pdetails =(props)=>{
                                 <div>
                                     <span> <b> technology - </b> </span>
                                     <span> {item.technology} </span>
-                                </div> <br/>
+                                </div> <br/> 
                                 <div>
                                     <span> <b> Which time started - </b> </span>
                                     <span> {item.Whichtimestarted} </span>
@@ -45,7 +45,7 @@ const Pdetails =(props)=>{
                         <figure>
                             <img src="/images/pp.png" alt="aa"/>
                         </figure>
-                    </div>
+                    </div> 
                     <div className="col-md-4 col-4 col-xxl-6 mx-auto">
                         <p id="edit"> “A successful website does three things:
                             It attracts the right kinds of visitors.

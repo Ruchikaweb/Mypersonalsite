@@ -1,6 +1,6 @@
 import React from 'react'
 import Servicedetails from '../service/servicedetails'
-const url ="https://web-mm.herokuapp.com/Service"
+const url ="https://web-mm.herokuapp.com/Services"
 
 class Servicedetailapi extends React.Component{
     constructor(){
@@ -8,7 +8,7 @@ class Servicedetailapi extends React.Component{
         this.state={
             services:''
         }
-    } 
+    }  
     render(){
         return(
             <React.Fragment>
@@ -18,14 +18,12 @@ class Servicedetailapi extends React.Component{
     }
 
     componentDidMount(){
-        fetch(url,{method:'GET'})
+        var serviceid = this.props.match.params.id
+        fetch(`${url}/${serviceid}`,{method:'GET'})
         .then((res) => res.json())
-        .then((data) => {
-            this.setState({services:data})
+        .then((data) => {this.setState({services:data})
         })
     }
 }
-
-
 
 export default Servicedetailapi ;

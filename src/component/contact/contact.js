@@ -3,7 +3,7 @@ import '../contact/contact.css'
 import Clauser from '../clauser/clauser'
 import Navbar from '../navbar/nav'
 const Url = "https://web-mm.herokuapp.com/Customerdetails";
-
+ 
 class Contact extends React.Component {
     constructor(props){
         super(props)
@@ -15,7 +15,7 @@ class Contact extends React.Component {
                 city:'',
                 message:''
             }
-    }
+    } 
     handelsubmit = () => {
         console.log(">>>>>>>",this.state)
         fetch(Url,
@@ -25,13 +25,25 @@ class Contact extends React.Component {
                     'Accept':'application/json',
                     'Content-Type':'application/json'
                 },
-                body:JSON.stringify(this.state)
+                body:JSON.stringify({
+                    name:this.state.name,
+                    email:this.state.email,
+                    gender:this.state.gender,
+                    city:this.state.city,
+                    message:this.state.message
+
+                }) 
             })
-            .then(this.props.history.push('/Contact'))
+            .then(this.props.history.push('/'))
     }
 
     handelchange=(event)=>{
         this.setState({[event.target.name]:event.target.value})
+    }
+
+    handelchangegender=(event)=>{
+        console.log(event)
+     
     }
     render(){
         return(
@@ -61,11 +73,11 @@ class Contact extends React.Component {
                         <div className="mb-3">
                             <label> Gender </label>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio"  name="gender" value="option1" value={this.state.gender}  onChange={this.handelchange} required/>
+                            <input class="form-check-input" type="radio"  name="gender"  value="Female"  checked={this.state.gender=="Female"} onChange={this.handelchange} required/>
                             <label class="form-check-label" for="inlineRadio1">Female</label>
                             </div>
                             <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" value="option2" value={this.state.gender}  onChange={this.handelchange} required/>
+                            <input class="form-check-input" type="radio" name="gender"  value="Male"  checked={this.state.gender=="Male"} onChange={this.handelchange} required/>
                             <label class="form-check-label" for="inlineRadio2">Male</label>
                             </div>
                         </div>

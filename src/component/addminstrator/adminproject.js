@@ -2,7 +2,32 @@ import React from 'react' ;
 import '../addminstrator/subscriber.css'
 import {Link} from 'react-router-dom'
 
-const Adminproject =() =>{
+const Adminproject =(props) =>{
+    const Projectts =({projectsss})=>{
+        if(projectsss){
+            return projectsss.map((item) => {
+                return(
+                    <React.Fragment>
+                        <div className="col-md-4 col-6 col-xxl-4 mx-auto">
+                            <h2>{item.projectname} </h2>
+                            <figure>
+                            <Link to={`/Gallary/${item._id}`}> <img src={item.image} style={{height:'40%',width:'100%'}} alt="gallary" className="img-fluid projectimgg"/> </Link>
+                            </figure>
+                            <p>{item.details} </p>
+                        </div>
+                        <hr/>
+                    </React.Fragment>
+                )
+            })
+        }
+        else{
+            return(
+                <div>
+                    <img src="/images/loader.gif"/>
+                </div>
+            )
+        }
+    }
     return(
         <>
             <div id="headstyle">
@@ -27,23 +52,8 @@ const Adminproject =() =>{
                 <hr className="w-25 mx-auto"/>
             </div>   
             <div className="container">
-                <div className="row gx-0 my-5">
-                <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                    <figure>
-                    <Link to="/Gallary/:project">   <img src="/images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
-                    </figure>
-                </div>
-                <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                    <figure>
-                    <Link to="/Gallary/:project">   <img src="/images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
-                    </figure>
-                </div>
-                <div className="col-md-4 col-10 col-xxl-4 mx-auto">
-                    <figure>
-                    <Link to="/Gallary/:project">   <img src="/images/fifth.jpg" alt="gallary" className="img-fluid"/> </Link>
-                    </figure>
-                </div>
-
+                <div className="row gx-0 my-5"> 
+                    {Projectts(props)}
                 <Link to="/Editproject"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="insert "> Edit </button> </Link>  
                 </div>
             </div>      

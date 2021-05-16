@@ -20,7 +20,7 @@ const servicees =({Service})=>{
                     </div>  
                   </>
                 )        
-            }
+            } 
             )}
         } 
         return( 

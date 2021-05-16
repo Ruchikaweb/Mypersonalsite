@@ -11,9 +11,9 @@ import Panel from '../component/addminstrator/panel';
 import Projectdetailsapi from '../component/Projectdetail/pdetailsapi';
 import Adminabout from '../component/addminstrator/adminabout';
 import Editabout from '../component/addminstrator/editabout';
-import Adminproject from '../component/addminstrator/adminproject';
+import Adminprojectapi from '../component/addminstrator/adminprojectapi';
 import Editproject from '../component/addminstrator/editproject';
-import Adminservice from '../component/addminstrator/adminservice';
+import  Adminserviceapi from '../component/addminstrator/adminserviceapi';
 import Editservice from '../component/addminstrator/editservice';
 import Adminlogin from '../component/addminstrator/login';
 import Adminlogout from '../component/addminstrator/logout';
@@ -31,8 +31,8 @@ const Routing = () =>{
          <Route path="/Gallary/:id" component={Projectdetailsapi}/>
          <Route exact path="/adminr"  component={Panel}/> 
          <Route exact path="/adminr/Adminabout"  component={Adminabout}/> 
-         <Route exact path="/adminr/Adminproject"  component={Adminproject}/> 
-         <Route exact path="/adminr/Adminservice" component={Adminservice}/>
+         <Route exact path="/adminr/Adminproject"  component={Adminprojectapi}/> 
+         <Route exact path="/adminr/Adminservice" component={ Adminserviceapi}/>
          <Route exact path="/adminr/Subscriber" component={Subscriberapi}/> 
          <Route exact path="/Admin_login" component={ Adminlogin}/>
          <Route exact path="/Admin_logout" component={Adminlogout}/>

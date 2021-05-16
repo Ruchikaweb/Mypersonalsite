@@ -1,6 +1,6 @@
 import React from 'react';
 import Pdetails from '../Projectdetail/pdetail'
-const url="https://web-mm.herokuapp.com/Project";
+const url="https://web-mm.herokuapp.com/Projects";
 
 class Projectdetailsapi extends React.Component{
     constructor(){
@@ -20,8 +20,8 @@ class Projectdetailsapi extends React.Component{
     }
 
     componentDidMount(){
-        // var projectid = this.props.match.params.id
-        fetch(url,{method:'GET'})
+        var projectid = this.props.match.params.id
+        fetch(`${url}/${projectid}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
             this.setState({project:data})

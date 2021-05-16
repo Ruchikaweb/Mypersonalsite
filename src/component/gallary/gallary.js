@@ -15,6 +15,7 @@ const Gallary =(props) =>{
                             <figure>
                             <Link to={`/Gallary/${item._id}`}> <img src={item.image} style={{height:'40%',width:'100%'}} alt="gallary" className="img-fluid projectimgg"/> </Link>
                             </figure>
+                            
                             <p>{item.details} </p>
                         </div>
                         <hr/>
@@ -34,7 +35,9 @@ const Gallary =(props) =>{
             </div>  
         </div>    
             <div className="container">
-               {Projects(props)}
+                <div className="row">
+                    {Projects(props)}
+               </div>
             </div>      
         
         </>

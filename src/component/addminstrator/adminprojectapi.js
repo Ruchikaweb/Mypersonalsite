@@ -1,8 +1,8 @@
 import React from 'react';
-import Gallary from '../gallary/gallary'
+import Adminproject from '../addminstrator/adminproject'
 const url="https://web-mm.herokuapp.com/Project";
 
-class Projectapi extends React.Component{
+class Adminprojectapi extends React.Component{
     constructor(){
         super()
 
@@ -13,7 +13,7 @@ class Projectapi extends React.Component{
     render(){
         return(
             <React.Fragment> 
-                <Gallary  projects={this.state.project}/>
+                <Adminproject  projectsss={this.state.project}/>
             </React.Fragment>
         )
     }
@@ -27,4 +27,4 @@ class Projectapi extends React.Component{
     }
 }
 
-export default Projectapi ;
+export default Adminprojectapi ;
