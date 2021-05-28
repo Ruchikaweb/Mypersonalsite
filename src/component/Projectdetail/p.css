@@ -33,7 +33,7 @@
     margin-right: 5%;
     font-size: 25px;
     margin-bottom: 5%;
-    margin-top: -120px;
+    margin-top: -50px;
 }
 
 
@@ -46,7 +46,7 @@
     /* background-color: rgb(240, 184, 184); */
     border: 6px solid gray;
 }
-
+/* 
 @media screen and (max-width:1120px){
     #edit{
         font-size: 20px;
@@ -56,5 +56,11 @@
     #edit{
         font-size: 15px;
         margin-top: 15%;
+    }
+} */
+
+@media screen and (max-width:618px){
+    #pedit{
+      margin-top: 0%;
     }
 }

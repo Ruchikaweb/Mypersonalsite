@@ -35,6 +35,13 @@ const Pdetails =(props)=>{
                 )
             })
         }
+        else{
+            return(
+                <div>
+                    <img src="/images/loader.gif"/>
+                </div>
+            )
+        }
     }
     return(
         <div>

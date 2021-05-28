@@ -1,5 +1,7 @@
 import React from  'react' 
 const url= "https://web-mm.herokuapp.com/Postservice"
+const geturl ="https://web-mm.herokuapp.com/Services/"
+const updateurl = "https://web-mm.herokuapp.com/updateservice/"
 
 class Editservice  extends React.Component{
     constructor(){
@@ -8,12 +10,31 @@ class Editservice  extends React.Component{
         this.state = {
             name:'',
             thumb:'',
-            content:''
+            content:'',
+            contentt:''
         }
     }
 
     handelsubmit = () => {
-        console.log(">>>>>>>",this.state)
+        if(this.props.match.params.id){
+            fetch(`${updateurl}${this.props.match.params.id}`,
+                {
+                    method:'PUT',
+                    headers:{
+                        'Accept':'application/json',
+                        'Content-Type':'application/json'
+                    },
+                    body:JSON.stringify({
+                        name:this.state.name,
+                        thumb:this.state.thumb,
+                        content:this.state.content,
+                        contentt:this.state.contentt
+                    }) 
+                })
+                .then(this.props.history.push('/adminr/Adminservice'))
+        }
+        else{
+            console.log(">>>>>>>",this.state)
         fetch(url,
             {
                 method:'POST',
@@ -25,9 +46,13 @@ class Editservice  extends React.Component{
                     name:this.state.name,
                     thumb:this.state.thumb,
                     content:this.state.content,
+                    contentt:this.state.contentt,
+                    isActive:true
                 }) 
             })
             .then(this.props.history.push('/adminr/Adminservice'))
+        }
+        
     }
  
     handelchange=(event)=>{
@@ -67,11 +92,29 @@ class Editservice  extends React.Component{
                             <label for="exampleInputPassword1" class="form-label"> Content </label>
                             <input type="text" class="form-control" name="content" value={this.state.content} onChange={this.handelchange}/>
                         </div> 
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">  contentt </label>
+                            <input type="text" class="form-control" name="contentt" value={this.state. contentt} onChange={this.handelchange}/>
+                        </div> 
+                       
                         <center> <button type="submit" class="btn btn-primary" onClick={this.handelsubmit} style={{padding:'1%',fontSize:'20px', marginBottom:'4%',marginTop:'1%'}}>Submit</button> </center>    
                     </form>
                 </div>
             </div>
         )
+    }
+    componentDidMount(){
+        if(this.props.match.params.id){
+            fetch(`${geturl}${this.props.match.params.id}`,{method:'GET'})
+            .then((res) => res.json())
+            .then((data) => {
+            this.setState({name:data[0].name})
+            this.setState({thumb:data[0].thumb})
+            this.setState({content:data[0].content})
+            this.setState({contentt:data[0].contentt})
+        })
+        }
+        
     }
    
 }

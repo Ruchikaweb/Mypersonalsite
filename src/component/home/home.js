@@ -3,7 +3,7 @@ import Clauser from '../clauser/clauser'
 import Navbar from '../navbar/nav'
 import {Link} from 'react-router-dom';
 import '../home/home.css'
-class Home extends React.Component {
+class Home extends React.Component { 
 
     constructor(props){
         super(props)

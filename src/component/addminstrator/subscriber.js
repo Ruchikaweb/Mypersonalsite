@@ -43,14 +43,14 @@ const Sub= (props) =>{
                 </div>
                  <div className="container" id="subcss">
                     <h3>  <center> Subscribers </center> </h3>
-                    <table className="table table-responsive">
+                    <table className="table table-responsive" id="tablestylee">
                         <thead>
                             <tr>
                             <th> Name </th>
                             <th> E-mail </th>
                             <th> Gender </th>
                             <th> city </th>
-                            <th> Message </th>
+                            <th> <p id="messagestyel"> Message </p>  </th>
                             </tr>
                         </thead>
                         <tbody>

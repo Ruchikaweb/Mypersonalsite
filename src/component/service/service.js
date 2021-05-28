@@ -22,6 +22,13 @@ const servicees =({Service})=>{
                 )        
             } 
             )}
+            else{
+                return(
+                    <div>
+                        <img src="/images/loader.gif"/>
+                    </div>
+                )
+            }
         } 
         return( 
             <>

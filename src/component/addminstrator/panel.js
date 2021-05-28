@@ -28,6 +28,12 @@ const Panel =()=>{
                         <li class="nav-item">
                         <Link class="nav-link" to="/adminr/Subscriber"> Subscriber</Link>
                         </li>
+                        <li class="nav-item">
+                        <Link class="nav-link" to="/adminr/delete"> Reactivate </Link>
+                        </li>
+                        <li class="nav-item">
+                        <Link class="nav-link" to="Admin_logout"> Log-Out </Link>
+                        </li>
                     </ul>
                     </div>
                 </div>  

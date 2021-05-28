@@ -1,8 +1,8 @@
 import React from 'react'
-import About from '../about/about'
+import Adminabout from '../addminstrator/adminabout'
 const url ="https://web-mm.herokuapp.com/About"
 
-class Aboutapi extends React.Component{
+class Adminaboutapi extends React.Component{
     constructor(){
         super()
         this.state={
@@ -12,7 +12,7 @@ class Aboutapi extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <About Aboutt={this.state.Abouts} />
+                <Adminabout Aboutts={this.state.Abouts} />
             </React.Fragment>
         )
     }
@@ -28,4 +28,4 @@ class Aboutapi extends React.Component{
 
 
 
-export default Aboutapi ;
+export default Adminaboutapi ;

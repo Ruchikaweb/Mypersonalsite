@@ -10,19 +10,26 @@ const Gallary =(props) =>{
             return projects.map((item)=>{
                 return(
                     <div>
-                        <div className="col-md-4 col-6 col-xxl-4 mx-auto">
+                        <div className="col-md-10 col-10 col-xxl-10 mx-auto">
                             <h2>{item.projectname} </h2>
                             <figure>
-                            <Link to={`/Gallary/${item._id}`}> <img src={item.image} style={{height:'40%',width:'100%'}} alt="gallary" className="img-fluid projectimgg"/> </Link>
+                            <img src={item.image}  alt="gallary" className="img-fluid projectimgg" id="projectoimggg"/> 
                             </figure>
-                            
-                            <p>{item.details} </p>
+                            <p style={{fontSize:'25px'}}>{item.details} </p> 
+                            <Link to={`/Gallary/${item._id}`} class="btn btn-primary">View More Details</Link>
                         </div>
                         <hr/>
                     </div>
                 )
             })
         } 
+        else{
+            return(
+                <div>
+                    <img src="/images/loader.gif"/>
+                </div>
+            )
+        }
     }
     return(
         <>

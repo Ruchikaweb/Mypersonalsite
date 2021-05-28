@@ -1,12 +1,10 @@
-import React from 'react';
-import '../addminstrator/subscriber.css';
+import React from 'react'
 import {Link} from 'react-router-dom';
-
-const Adminservice =(props)=> {
+const Channge =(props)=> { 
     const Serviceadmin = ({Services}) =>{
         if(Services){
             return Services.map((item) =>{
-                return(
+                return( 
                     <React.Fragment>
                         <div className="col-md-4 col-10 col-xxl-4 mx-auto">
                             <div class="card" style={{width:'18rem'}}>
@@ -14,9 +12,10 @@ const Adminservice =(props)=> {
                                 <div class="card-body">
                                 <h5 class="card-title">{item.name}</h5>
                                 <p class="card-text"> {item.content} </p>
-                                <Link to={`/adminr/updateservice/${item._id}`}> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="Update"> Update </button> </Link> 
-                                <Link to={`/changestatus/${item._id}`}> <button type="button" class="btn btn-outline-info"> Out Service </button> </Link>
-                                    
+                                <Link to={`/active/${item._id}`}> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="Update"> In Service </button> </Link> 
+                                <Link to={`/harddel/${item._id}`}> <button type="button" class="btn btn-outline-info"> Hard Delete </button> </Link>
+                                
+                                  
                                 </div>
                             </div> 
                         </div> 
@@ -63,14 +62,11 @@ const Adminservice =(props)=> {
                     
                     {Serviceadmin(props)}
                     
-                </div> 
-                <center>  <Link to="/Editservice"> <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right" title="insert" style={{padding:'1%',fontSize:'20px', marginBottom:'2%',marginTop:'1%'}}> Insert </button> </Link>  </center>
-                
-
+                </div>
             </div>
         </div>
     </>
         )
 }
 
-export default Adminservice ;
+export default Channge

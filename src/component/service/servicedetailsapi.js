@@ -20,7 +20,7 @@ class Servicedetailapi extends React.Component{
     componentDidMount(){
         var serviceid = this.props.match.params.id
         fetch(`${url}/${serviceid}`,{method:'GET'})
-        .then((res) => res.json())
+        .then((res) => res.json()) 
         .then((data) => {this.setState({services:data})
         })
     }
